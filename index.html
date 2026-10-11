@@ -250,7 +250,7 @@ No siempre sé cómo decir lo que siento, así que lo escribo aquí: te quiero m
 
 Gracias por quedarte, por escucharme y por hacer que todo pese menos, tanto en los días fáciles como en los que no lo son tanto. Tu compañía vale más de lo que imaginas.
 
-Si pudiera, te daría un abrazo ahora mismo, de esos largos y sin prisa. Como no puedo, te lo mando por aquí, con un besito de regalo.
+Espero poder un dia quedar para celebrar tu cumpleaños y vernos 
 
 Gracias por ser tú y por estar a mi lado.
 
@@ -312,7 +312,7 @@ function verFoto(i){li=(i+LB.length)%LB.length;$('lbi').src=LB[li];$('lb').class
   LB=fotos.map(f=>f.s);
   fotos.forEach(({s,i},k)=>{const p=document.createElement('div');p.className='gl';p.tabIndex=0;p.innerHTML=`<img src="${s}" alt="Foto ${i+1}" loading="lazy">`;
     const ab=()=>{verFoto(k);lluvia(8,'💜')};p.onclick=ab;p.onkeydown=e=>{if(e.key=='Enter'){e.preventDefault();ab()}};$('album').appendChild(p)});
-  $('fsub').textContent='Tócalas para verlas más grandes.';
+  $('fsub').textContent='';
   $('fotos').style.display='block';io.observe($('fotos'));
   /* fondo translúcido: cada columna muestra una foto distinta y cambia despacio */
   document.querySelectorAll('#fondo .col').forEach((col,c)=>{const caps=col.querySelectorAll('.f');let k=c*3,cur=0;
