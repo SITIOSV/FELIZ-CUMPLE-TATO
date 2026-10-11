@@ -9,13 +9,14 @@
 <meta property="og:locale" content="es_LA">
 <meta property="og:title" content="Para ti, Tati 💜">
 <meta property="og:description" content="Un detalle hecho con mucho cariño para Tati 🪻">
-<meta property="og:image" content="banner.jpg">
+<meta property="og:url" content="https://sitiosv.github.io/FELIZ-CUMPLE-TATO/">
+<meta property="og:image" content="https://sitiosv.github.io/FELIZ-CUMPLE-TATO/banner.jpg?v=2">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Para ti, Tati">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="banner.jpg">
+<meta name="twitter:image" content="https://sitiosv.github.io/FELIZ-CUMPLE-TATO/banner.jpg?v=2">
 <meta name="theme-color" content="#170f24">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -183,7 +184,7 @@ body:not(.abierto){overflow:hidden}
   <section id="msgs" class="sec rev">
     <div class="card"><p><span class="em">💜</span>Tati, quiero que lo sepas: te quiero mucho.</p></div>
     <div class="card"><p><span class="em">🤝</span>Gracias por estar a mi lado. Contar contigo hace que todo sea más fácil y más bonito.</p></div>
-    <div class="card"><p><span class="em">🤗</span>Espero la pases bien reina </p></div>
+    <div class="card"><p><span class="em">🤗</span>Te mando un gran abrazo y un besito. 😘</p></div>
     <div class="pista">Sigue bajando<br>↓</div>
   </section>
 
@@ -220,7 +221,7 @@ body:not(.abierto){overflow:hidden}
 
   <section id="florecer" class="sec rev">
     <div class="dor">
-      <h2 class="tit">Planta una más</h2><p class="subt">Si quieres seguir viendo  flores.</p>
+      <h2 class="tit">Planta una más</h2><p class="subt">Si quieres seguir regalando flores.</p>
       <button id="bf" class="btn sm">Haz crecer una flor 🪻</button>
       <p id="cn" class="cnt">Flores: 0</p><div id="fm" class="msg" aria-live="polite"></div>
       <div id="fc" class="jardin sm"></div>
@@ -247,9 +248,9 @@ const TEXTO=`Querida Tati:
 
 No siempre sé cómo decir lo que siento, así que lo escribo aquí: te quiero mucho, de verdad.
 
-Gracias por quedarte, por escucharme  tanto en los días fáciles como en los que no lo son tanto. Tu compañía vale más de lo que imaginas.
+Gracias por quedarte, por escucharme y por hacer que todo pese menos, tanto en los días fáciles como en los que no lo son tanto. Tu compañía vale más de lo que imaginas.
 
-quisa podamos quedar un moemnto o un dia para festejar tu vida
+Si pudiera, te daría un abrazo ahora mismo, de esos largos y sin prisa. Como no puedo, te lo mando por aquí, con un besito de regalo.
 
 Gracias por ser tú y por estar a mi lado.
 
@@ -311,7 +312,7 @@ function verFoto(i){li=(i+LB.length)%LB.length;$('lbi').src=LB[li];$('lb').class
   LB=fotos.map(f=>f.s);
   fotos.forEach(({s,i},k)=>{const p=document.createElement('div');p.className='gl';p.tabIndex=0;p.innerHTML=`<img src="${s}" alt="Foto ${i+1}" loading="lazy">`;
     const ab=()=>{verFoto(k);lluvia(8,'💜')};p.onclick=ab;p.onkeydown=e=>{if(e.key=='Enter'){e.preventDefault();ab()}};$('album').appendChild(p)});
-  $('fsub').textContent='.';
+  $('fsub').textContent='Tócalas para verlas más grandes.';
   $('fotos').style.display='block';io.observe($('fotos'));
   /* fondo translúcido: cada columna muestra una foto distinta y cambia despacio */
   document.querySelectorAll('#fondo .col').forEach((col,c)=>{const caps=col.querySelectorAll('.f');let k=c*3,cur=0;
